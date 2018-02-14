@@ -586,7 +586,7 @@ class DotpayConfig
     
     public function setDotpayNewStatusId($id)
     {
-        return Configuration::updateValue('PAYMENT_DP_NEW_ORDER_STATUS', $id);
+        return Configuration::updateGlobalValue('PAYMENT_DP_NEW_ORDER_STATUS', $id);
     }
     public function getDotpayNewStatusId()
     {
